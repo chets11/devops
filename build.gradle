@@ -1,5 +1,5 @@
 apply plugin: 'java'
-apply plugin: 'maven'
+apply plugin: 'war'
 
 group = 'com.mycompany.app'
 version = '1.0-SNAPSHOT'
@@ -9,7 +9,7 @@ description = """my-app"""
 sourceCompatibility = 1.5
 targetCompatibility = 1.5
 
-
+war.archiveName "myapp.war"
 
 repositories {
         
@@ -18,3 +18,4 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version:'3.8.1'
 }
+
